@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Icurrentshow } from '../icurrentshow';
 
 @Component({
   selector: 'app-current-show',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./current-show.component.css']
 })
 export class CurrentShowComponent implements OnInit {
+  current: Icurrentshow 
+  constructor() { 
+    this.current = {
+      id:139,
+      name:'girls',
+      type:'scripted',
+      language:'English',
+      genres:['Drama','Romance',],
+      runtime:30,
 
-  constructor() { }
 
-  ngOnInit(): void {
+
+
+    } as Icurrentshow
+
+
+
+   }
+
+  ngOnInit():void  {
   }
 
 }
