@@ -5,6 +5,7 @@ export interface Icurrentshow {
   language: string
   genres: [string,string] 
   runtime:number
+  
 
 
 
