@@ -1,10 +1,13 @@
 <div>
   <div>
-    <img [src]='current.image' />
-    <span>{{current.id}},{{current.name}}</span>
+    
+    <span>{{current.name}}
+      </span>
   </div>
+    <span>{{current.runtime}}min</span>
   <div>
-    {{current.type}}
+    {{current.type}},{{current.language}},{{current.time}}
   </div>
+  <div>{{current.schedule | number:'fulltime'}} </div>
 
 </div>

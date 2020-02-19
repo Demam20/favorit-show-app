@@ -19,14 +19,16 @@ export class ShowService {
     ).pipe(map(data => this.tarnsformToIcurrentshow(data)));
   }
 
-  private tarnsformToIcurrentshow(data:ICurrentShowData) : Icurrentshow {
+  private tarnsformToIcurrentshow(data:ICurrentShowData) : 
+  Icurrentshow {
     return {
-      id: data.show.id,
-      name:data.show.name,
-      type:data.show.type,
-      language:data.show.language,
-      genres:data.show.genres,
-      runtime:data.show.runtime
+      id: data.id,
+      name:data.name,
+      type:data.type,
+      language:data.language,
+      genres:data.genres,
+      runtime:data.runtime,
+      schedule:data.schedule.time
 
 
 
@@ -35,3 +37,7 @@ export class ShowService {
 
   }
 }
+
+
+
+
