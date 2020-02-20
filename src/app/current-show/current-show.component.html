@@ -1,13 +1,19 @@
 <div>
   <div>
     
-    <span>{{current.name}}
+    <span>Show name: {{current.name}}
       </span>
   </div>
-    <span>{{current.runtime}}min</span>
+  <img src="http://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg">
+    
   <div>
-    {{current.type}},{{current.language}},{{current.time}}
+    <br>Type: {{current.type}}
+    <br>Language: {{current.language}}
+    <br>Show time: {{current.runtime}}min
+    <br>genres:{{current.genres}}
   </div>
-  <div>{{current.schedule | number:'fulltime'}} </div>
+  <div>{{current.time}}
+    {{current.days}}
+     </div>
 
 </div>

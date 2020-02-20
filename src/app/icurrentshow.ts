@@ -3,15 +3,9 @@ export interface Icurrentshow {
   name: string
   type: string
   language: string
-  genres: [string,string] 
+  genres: [string] 
   runtime:number
-  schedule:number
-  
-
-
-
-
-
-
-
-}
+  time:string
+  days:[string]
+  image: string
+};

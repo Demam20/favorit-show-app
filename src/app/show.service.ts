@@ -28,13 +28,10 @@ export class ShowService {
       language:data.language,
       genres:data.genres,
       runtime:data.runtime,
-      schedule:data.schedule.time
-
-
-
+      time:data.schedule.time,
+      days:data.schedule.days,
+      image:data.image.medium
     }
-
-
   }
 }
 

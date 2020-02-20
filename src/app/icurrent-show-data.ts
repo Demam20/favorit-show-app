@@ -3,14 +3,15 @@ export interface ICurrentShowData {
   name: string;
   type: string;
   language: string;
-  genres: [string, string];
+  genres: [string];
   runtime: number;
   schedule:{
-    time:number
-  }
+    time:string
+    days:[string]
+  };
+  image:{
+    medium: string
+  };
   
     
-  }
-  
-
-
+}
