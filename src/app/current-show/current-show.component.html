@@ -1,10 +1,10 @@
-<div>
+<div *ngIf="current">
   <div>
     
     <span>Show name: {{current.name}}
       </span>
   </div>
-  <img src="http://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg">
+  <img src="{{current.medium}}">
     
   <div>
     <br>Type: {{current.type}}

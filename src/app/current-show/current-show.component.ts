@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Icurrentshow } from '../icurrentshow';
 import { ShowService } from '../show.service';
+import { IShowService } from '../ishow-service';
 
 @Component({
   selector: 'app-current-show',
@@ -9,9 +10,7 @@ import { ShowService } from '../show.service';
 })
 export class CurrentShowComponent implements OnInit {
   current: Icurrentshow 
-  constructor(private showService:ShowService) { 
-    
-
+  constructor(private showService:IShowService) { 
 
 
    }

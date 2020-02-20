@@ -5,11 +5,12 @@ import { environment } from 'src/environments/environment';
 import { Icurrentshow } from './icurrentshow';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators'
+import { IShowService } from './ishow-service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ShowService {
+export class ShowService implements IShowService  {
 
   constructor(private httpClient:HttpClient) { }
 
@@ -30,7 +31,7 @@ export class ShowService {
       runtime:data.runtime,
       time:data.schedule.time,
       days:data.schedule.days,
-      image:data.image.medium
+      medium:data.image.medium
     }
   }
 }

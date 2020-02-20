@@ -7,5 +7,5 @@ export interface Icurrentshow {
   runtime:number
   time:string
   days:[string]
-  image: string
+  medium: string
 };
